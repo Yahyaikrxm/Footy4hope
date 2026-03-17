@@ -54,6 +54,7 @@ body {
 
 body {
   min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--off-white);
   color: var(--deep-black);
   font-family: 'HelveticaNeueMedium', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -347,9 +348,21 @@ a {
   border: 3px solid var(--primary-yellow);
 }
 
+.btn-outline-yellow2 {
+  background: transparent;
+  color: var(--primary-yellow);
+  border: 3px solid var(--primary-yellow);
+}
+
 .btn-small {
   padding: 0.5rem 1.25rem;
   font-size: 0.9rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 /* ============================================
@@ -896,7 +909,7 @@ a {
 @media (max-width: 600px) {
   :root {
     --container-padding: 1.5rem;
-    --section-padding: 3rem;
+    --section-padding: 4rem;
   }
 
   .hero-heading {
@@ -905,6 +918,10 @@ a {
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .hero-content {
+    padding: 2rem;
   }
 
   .tournament-cards {
@@ -916,16 +933,39 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  :root {
+    --container-padding: 2rem;
+    --section-padding: 4rem;
+    --header2-size: 48px;
+    --header-size: 28px;
+    --subheading-size: 20px;
+    --body-size: 14px;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav-logo img {
+    max-height: 24px;
+  }
+  
+  .hero-heading {
+    font-size: 2rem;
+  }
+}
+
 .register-section {
-  /* padding: var(--container-padding);
-  /* min 1rem, fluid preferred 6vw, max 20rem */
-  /* padding-inline: clamp(1rem, 6vw, 20rem);
+  padding: var(--section-padding) var(--container-padding);
   margin: 25px auto 0;
-  max-width: 1400px; */ 
-  padding-top: var(--container-padding);
-  margin: 25px auto 0;
-  padding-left: clamp(1rem, 16vw, 30rem);
-  padding-right: clamp(1rem, 16vw, 30rem);
+  max-width: 1000px;
   box-sizing: border-box;
   text-align: center;
 }
