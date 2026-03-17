@@ -1,7 +1,4 @@
-/* ============================================
-   FOOTY4HOPE – Design Guide Implementation
-   ============================================ */
-
+/* Root */
 :root {
   --primary-yellow: #F1CE1F;
   --deep-black: #020001;
@@ -23,13 +20,7 @@
   --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.06);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Load local fonts */
+/* Fonts */
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Satoshi-Variable.ttf') format('truetype');
@@ -44,6 +35,13 @@
   font-weight: 400 600;
   font-style: normal;
   font-display: swap;
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html,
@@ -64,7 +62,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Headers and bold text use Satoshi (variable) with slightly tighter tracking */
 h1, h2, h3, h4, h5, h6,
 .hero-heading,
 .mission-heading,
@@ -96,9 +93,7 @@ a {
   border: 0;
 }
 
-/* ============================================
-   Section 1: Sticky Navigation Bar
-   ============================================ */
+/* Navigation */
 .nav-bar {
   position: fixed;
   top: 0;
@@ -152,7 +147,6 @@ a {
   object-fit: contain;
 }
 
-/* Hamburger menu overlay */
 .nav-menu {
   position: fixed;
   top: 0;
@@ -164,7 +158,7 @@ a {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(20px); /* Apply the blur effect to the background area */
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   opacity: 0;
   visibility: hidden;
@@ -198,52 +192,7 @@ a {
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-  .nav-bar {
-    padding: 0.75rem var(--container-padding);
-  }
-  .nav-logo img {
-    max-height: 36px;
-    width: auto;
-  }
-  /* .nav-icon {
-    width: 40px;
-    height: 40px;
-  } */
-  .nav-hamburger {
-    width: 28px;
-  }
-  .nav-hamburger span {
-    width: 20px;
-    height: 2.5px;
-  }
-}
-
-@media (max-width: 400px) {
-  .nav-bar {
-    padding: 0.5rem var(--container-padding);
-  }
-  /* .nav-logo img {
-    max-height: 32px;
-  } */
-  .nav-icon {
-    width: 36px;
-    height: 36px;
-  }
-  .nav-hamburger {
-    width: 26px;
-    gap: 5px;
-    padding: 0.35rem;
-  }
-  .nav-hamburger span {
-    width: 18px;
-    height: 2.25px;
-  }
-}
-
-/* ============================================
-   Section 2: Hero Section (Full Page)
-   ============================================ */
+/* Hero */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -266,25 +215,19 @@ a {
   color: var(--light-grey);
 }
 
-/* dark overlay so background image appears slightly darker */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.458); /* adjust alpha (0.0 - 1.0) to taste */
+  background: rgba(0, 0, 0, 0.458);
   pointer-events: none;
   z-index: 1;
 }
 
-/* make sure hero content sits above the overlay */
 .hero-content {
   position: relative;
   z-index: 2;
-}
-
-.hero-content {
   text-align: center;
-  /* padding: 2rem var(--container-padding); */
   padding: 1rem;
   max-width: 700px;
 }
@@ -296,12 +239,6 @@ a {
   color: var(--pure-white);
   line-height: 1.3;
 }
-
-/* @media (min-width: 1200px) {
-  .hero-heading {
-    margin: 0 0 1rem;
-  }
-} */
 
 .hero-buttons {
   display: flex;
@@ -317,9 +254,7 @@ a {
   animation: bounce 2s infinite;
 }
 
-/* ============================================
-   Buttons (Pill shaped)
-   ============================================ */
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -365,9 +300,7 @@ a {
   justify-content: center;
 }
 
-/* ============================================
-   Section 3: Mission Statement
-   ============================================ */
+/* Mission */
 .mission {
   background: var(--pure-white);
   padding: var(--section-padding) var(--container-padding);
@@ -418,9 +351,7 @@ a {
   max-width: 300px;
 }
 
-/* ============================================
-   Section 4: Tournament Details
-   ============================================ */
+/* Tournament */
 .tournament-details {
   background: var(--off-white);
   padding: var(--section-padding) var(--container-padding);
@@ -471,10 +402,10 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;    /* horizontally center date lines */
-  justify-content: center; /* vertically center date block */
+  align-items: center;
+  justify-content: center;
   padding: 1.25rem;
-  min-height: 180px;      /* adjust as needed to give room for centering */
+  min-height: 180px;
   box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 4%;
@@ -537,9 +468,7 @@ a {
   text-decoration: underline;
 }
 
-/* ============================================
-   Section 5: Fundraising Goal
-   ============================================ */
+/* Fundraising */
 .fundraising-goal {
   background: var(--pure-white);
   padding: var(--section-padding) var(--container-padding);
@@ -580,9 +509,7 @@ a {
   color: var(--deep-black);
 }
 
-/* ============================================
-   Section 6: Support / Sponsor
-   ============================================ */
+/* Support */
 .support {
   background: var(--off-white);
   padding: var(--section-padding) var(--container-padding);
@@ -622,7 +549,7 @@ a {
 }
 
 .sponsor-desc {
-  margin:  1.25rem 0 0 1.25rem;
+  margin: 1.25rem 0 0 1.25rem;
   padding-bottom: 1.25rem;
   font-size: var(--body-size);
   color: var(--deep-black);
@@ -630,9 +557,6 @@ a {
   margin-inline: auto;
 }
 
-/* ============================================
-   Terms anchor
-   ============================================ */
 .terms-anchor {
   padding: var(--section-padding) var(--container-padding);
   text-align: center;
@@ -644,94 +568,23 @@ a {
   color: var(--deep-black);
 }
 
-/* ============================================
-   Section 7: Main Footer (Rounded bottom corners)
-   ============================================ */
-
+/* Footer */
 .section-divider {
   display: block;
   width: 100%;
-  height: 10%; /* adjust height */
+  height: 10%;
   margin-bottom: -2px;
 }
+
 .section-divider path {
-  fill: var(--primary-yellow); /* change to footer/sponsor bg color as needed */
+  fill: var(--primary-yellow);
   transition: fill 0.2s;
   shape-rendering: geometricPrecision;
 }
 
-/* flip divider if you need it inverted (footer on top) */
 .section-divider.flip {
   transform: rotate(180deg);
 }
-
-/* responsive size tweak */
-@media (max-width: 800px) {
-  .section-divider { margin-bottom: -60px; }
-}
-
-   /* .main-footer {
-  background: var(--primary-yellow);
-  padding: var(--section-padding) var(--container-padding) 2rem;
-}
-
-.footer-grid {
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.footer-links a {
-  color: var(--deep-black);
-  text-decoration: underline;
-  font-size: var(--body-size);
-}
-
-.footer-social h3 {
-  margin: 0 0 0.35rem;
-  font-size: var(--subheading-size);
-  font-weight: 600;
-  color: var(--deep-black);
-}
-
-.footer-social p {
-  margin: 0 0 0.75rem;
-  font-size: var(--body-size);
-  color: var(--deep-black);
-}
-
-.social-handle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: var(--body-size);
-  font-weight: 600;
-  color: var(--deep-black);
-}
-
-.instagram-icon {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  background: var(--deep-black);
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z'/%3E%3C/svg%3E") center/contain no-repeat;
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z'/%3E%3C/svg%3E") center/contain no-repeat;
-}
-
-.footer-copy {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--deep-black);
-  text-align: center;
-} */
 
 .main-footer {
   background: var(--primary-yellow);
@@ -741,12 +594,12 @@ a {
   text-align: center;
 }
 
-/* top logo centered */
 .footer-top {
   display: flex;
   justify-content: center;
   margin-bottom: 1.25rem;
 }
+
 .footer-logo {
   max-width: 220px;
   width: 55%;
@@ -754,26 +607,24 @@ a {
   display: block;
 }
 
-/* two-column grid for links (stack on small screens) */
 .footer-grid {
-  display:flex;
-  justify-content:center;
-  align-items:flex-start; 
-  gap:1rem; 
-  max-width:1100px; 
-  margin:0 auto 1.25rem; 
-  padding:0 var(--container-padding); 
-  width:100%; 
-  box-sizing:border-box;
- }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 1.25rem;
+  padding: 0 var(--container-padding);
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .footer-column {
-  text-align:left;
-  /* flex:0 1 320px;  */
-  display:flex; 
-  flex-direction:column; 
-  align-items:flex-start;
- }
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .footer-heading {
   margin: 0 0 0.5rem;
@@ -782,7 +633,6 @@ a {
   color: #474747;
 }
 
-/* body paragraph slightly dark grey */
 .footer-body {
   margin: 0 0 0.75rem;
   color: #6b6b6b;
@@ -791,7 +641,7 @@ a {
 
 .footer-links-list,
 .footer-links-list li {
-  list-style: none; /* remove bullets */
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -807,25 +657,15 @@ a {
 }
 
 .footer-links-list a {
-  display:inline-flex; 
-  align-items:center; 
-  gap:0rem;
-}
-
-/* 
-.footer-links-list a {
-  color: var(--deep-black);
-  text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  font-weight: 500;
-} */
+  gap: 0rem;
+}
+
 .footer-links-list a:hover {
   text-decoration: underline;
 }
 
-/* placeholder icons left of link text */
 .icon-placeholder {
   display: inline-block;
   width: 20px;
@@ -835,41 +675,30 @@ a {
   flex: 0 0 20px;
 }
 
-/* small visual difference for specific placeholders (optional) */
-/* .icon-placeholder.email-icon
-.icon-placeholder.instagram-icon  */
-
-/* footer copyright */
 .footer-copy {
   margin-top: 3rem;
   font-size: 0.85rem;
   color: var(--deep-black);
   text-align: center;
-} 
-
-/* responsive layout: two columns on wider screens */
-@media (min-width: 720px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-  }
-  .footer-logo {
-    max-width: 280px;
-    width: auto;
-  }
-  .main-footer {
-    margin-top:0rem;
-    padding: 0rem 0rem 2.5rem;
-     text-align: center; }
-  
-   .footer-top { 
-    justify-content: center; 
-    margin-bottom: 1.75rem; }
 }
 
-/* ============================================
-   Responsive
-   ============================================ */
+/* Register */
+.register-section {
+  padding: var(--section-padding) var(--container-padding);
+  margin: 25px auto 0;
+  max-width: 1000px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#mission,
+#tournament,
+#donate,
+#terms {
+  scroll-margin-top: 100px;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
   :root {
     --container-padding: 2.5rem;
@@ -897,12 +726,35 @@ a {
     position: static;
     transform: none;
     font-size: 0.95rem;
-    
   }
 
   .nav-bar {
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  .nav-bar {
+    padding: 0.75rem var(--container-padding);
+  }
+
+  .nav-logo img {
+    max-height: 36px;
+    width: auto;
+  }
+
+  .nav-hamburger {
+    width: 28px;
+  }
+
+  .nav-hamburger span {
+    width: 20px;
+    height: 2.5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-divider {
+    margin-bottom: -60px;
   }
 }
 
@@ -950,29 +802,57 @@ a {
   .nav-links a {
     font-size: 1.5rem;
   }
+
+  .nav-bar {
+    padding: 0.5rem var(--container-padding);
+  }
+
+  .nav-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-hamburger {
+    width: 26px;
+    gap: 5px;
+    padding: 0.35rem;
+  }
+
+  .nav-hamburger span {
+    width: 18px;
+    height: 2.25px;
+  }
 }
 
 @media (max-width: 340px) {
   .nav-logo img {
     max-height: 24px;
   }
-  
+
   .hero-heading {
     font-size: 2rem;
   }
 }
 
-.register-section {
-  padding: var(--section-padding) var(--container-padding);
-  margin: 25px auto 0;
-  max-width: 1000px;
-  box-sizing: border-box;
-  text-align: center;
-}
+@media (min-width: 720px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
 
-#mission,
-#tournament,
-#donate,
-#terms {
-  scroll-margin-top: 100px;
+  .footer-logo {
+    max-width: 280px;
+    width: auto;
+  }
+
+  .main-footer {
+    margin-top: 0rem;
+    padding: 0rem 0rem 2.5rem;
+    text-align: center;
+  }
+
+  .footer-top {
+    justify-content: center;
+    margin-bottom: 1.75rem;
+  }
 }
