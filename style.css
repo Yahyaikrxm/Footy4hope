@@ -682,7 +682,7 @@ a {
   font-size: 0.85rem;
   color: var(--deep-black);
   text-align: center;
-}
+}    
 
 /* Register */
 .register-section {
@@ -700,6 +700,87 @@ a {
 .hr-r {
   border: none;
   border-top: 2px solid var(--light-grey)
+}
+
+/* Terms & Conditions page */
+.tc-wrapper {
+  max-width: 900px;
+  margin: 1.25rem auto 0;
+  text-align: left;
+}
+
+.tc-intro {
+  margin: 0 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--pure-white);
+  border-left: 4px solid var(--primary-yellow);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  color: var(--dark-grey);
+  line-height: 1.75;
+}
+
+.tc-section {
+  margin-bottom: 2rem;
+}
+
+.tc-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--deep-black);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tc-section h2::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--light-grey);
+  display: block;
+}
+
+.tc-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tc-section ul li {
+  font-size: 0.98rem;
+  color: var(--dark-grey);
+  line-height: 1.7;
+  padding: 0.35rem 0 0.35rem 1.4rem;
+  position: relative;
+}
+
+.tc-section ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  color: var(--deep-black);
+  font-size: 0.9rem;
+}
+
+.tc-section p {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.98rem;
+  color: var(--dark-grey);
+  line-height: 1.75;
+}
+
+.tc-note {
+  margin-top: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--pure-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  font-size: 0.95rem;
+  color: var(--dark-grey);
+  font-style: italic;
 }
 
 #mission,
