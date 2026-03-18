@@ -693,6 +693,15 @@ a {
   text-align: center;
 }
 
+.register-h {
+  text-align: left;
+}
+
+.hr-r {
+  border: none;
+  border-top: 2px solid var(--light-grey)
+}
+
 #mission,
 #tournament,
 #donate,
