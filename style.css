@@ -360,14 +360,8 @@ a {
   line-height: 1.6;
 }
 
-/* .mission-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .mission-list {
   display: grid;
-  /* Forces exactly 2 columns on desktop/tablets */
   grid-template-columns: repeat(2, 1fr); 
   gap: 1rem;
   list-style: none;
@@ -377,7 +371,6 @@ a {
 
 .mission-item {
   display: flex;
-  /* Keeps Name and Role stacked vertically */
   flex-direction: column; 
   align-items: flex-start;
   justify-content: center;
@@ -388,7 +381,7 @@ a {
   border-left: 5px solid var(--primary-yellow);
   font-size: 0.8rem;
   line-height: 1.3;
-  min-height: 20px; /* Keeps all 4 boxes the same height */
+  min-height: 20px; 
 }
 
 .mission-item strong {
@@ -402,12 +395,6 @@ a {
   font-size: 0.85rem;
 }
 
-/* Responsive: Only drop to 1 column on small mobile phones */
-@media (max-width: 550px) {
-  .mission-list {
-    grid-template-columns: 1fr;
-  }
-}
 
 .mission-item:hover {
   background: var(--off-white-hover, #f0f0f0);
@@ -857,6 +844,128 @@ a {
   scroll-margin-top: 100px;
 }
 
+
+/* Details page */
+.details-main {
+  background: var(--pure-white);
+  padding-top: 80px; 
+  min-height: 100vh;
+}
+
+.details-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem var(--container-padding);
+}
+
+.details-date {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.details-title {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--deep-black);
+  letter-spacing: -0.04em;
+}
+
+.details-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* New Red Outline Button */
+.btn-outline-red {
+  background: transparent;
+  color: #E74C3C;
+  border: 3px solid #E74C3C;
+  border-radius: var(--radius-pill);
+  padding: 0.70rem 1.5rem; 
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-outline-red:hover {
+  transform: scale(1.04);
+}
+
+.details-divider {
+  border: none;
+  border-top: 2px solid var(--off-white);
+  margin: 2.5rem 0;
+}
+
+.details-block {
+  margin-bottom: 2rem;
+}
+
+.details-h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #666; 
+  letter-spacing: -0.04em;
+}
+
+.details-block p {
+  color: var(--deep-black);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.details-block ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--deep-black);
+  font-size: 0.95rem;
+}
+
+.details-block li {
+  margin-bottom: 0.4rem;
+}
+
+.details-map {
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+.details-img-full {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  background-color: var(--off-white); /* acts as a placeholder color if image doesn't load */
+  object-fit: contain;
+}
+
+/* Responsive adjustments for details page */
+@media (max-width: 600px) {
+  .details-title {
+    font-size: 2.2rem;
+  }
+  .details-h2 {
+    font-size: 1.6rem;
+  }
+  .details-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   :root {
@@ -911,9 +1020,9 @@ a {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 80px) {
   .section-divider {
-    margin-bottom: -60px;
+    margin-bottom: -75px;
   }
 }
 
@@ -941,6 +1050,12 @@ a {
 
   .tournament-card {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .mission-list {
+    grid-template-columns: 1fr;
   }
 }
 
