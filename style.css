@@ -859,18 +859,17 @@ a {
 }
 
 .details-date {
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 0.25rem;
-  font-weight: 500;
+  margin: 0 0 0.25rem;
+  font-size: var(--subheading-size);
+  font-weight: 600;
+  color: var(--dark-grey);
 }
 
 .details-title {
-  font-size: 3rem;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin: -12px 0 1rem;
+  font-size: var(--header-size);
+  font-weight: 700;
   color: var(--deep-black);
-  letter-spacing: -0.04em;
 }
 
 .details-buttons {
@@ -881,7 +880,7 @@ a {
   margin-bottom: 2rem;
 }
 
-/* New Red Outline Button */
+
 .btn-outline-red {
   background: transparent;
   color: #E74C3C;
@@ -912,11 +911,10 @@ a {
 }
 
 .details-h2 {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: #666; 
-  letter-spacing: -0.04em;
+  margin: -12px 0 1rem;
+  font-size: var(--header-size);
+  font-weight: 700;
+  color: var(--dark-grey);
 }
 
 .details-block p {
@@ -937,6 +935,14 @@ a {
   margin-bottom: 0.4rem;
 }
 
+.details-desc {
+  margin: -12px 0 1.25rem;
+  font-size: var(--body-size);
+  color: var(--deep-black);
+  margin-inline: auto;
+
+}
+
 .details-map {
   margin-top: 1rem;
   border-radius: 12px;
@@ -953,13 +959,7 @@ a {
 }
 
 /* Responsive adjustments for details page */
-@media (max-width: 600px) {
-  .details-title {
-    font-size: 2.2rem;
-  }
-  .details-h2 {
-    font-size: 1.6rem;
-  }
+@media (max-width: 480px) {
   .details-buttons {
     flex-direction: column;
     align-items: flex-start;
