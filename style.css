@@ -235,7 +235,7 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  min-height: 110vh;
+  height: 110vh;
   overflow-y: hidden;
 }
 
