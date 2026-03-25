@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/png" href="images/WebLogo-v2.png" />
+<link rel="shortcut icon" type="image/png" href="images/WebLogo-v2.png" />
 </head>
 <body id="top">
 
@@ -32,14 +34,14 @@
   <ul class="nav-links">
     <li><a href="index.html#hero">Home</a></li>
     <li><a href="index.html#mission">Our Mission</a></li>
-    <li><a href="index.html#tournament">Tournament Details</a></li>
+     <li><a href="tournament-details.html">Soccer Tournament</a></li>
     <li><a href="index.html#donate">Donate</a></li>
     <li><a href="sponsor.html">Sponsor</a></li>
   </ul>
 </nav>
 
 <section class="register-section">
-  <h1 class="register-h">Terms &amp; Conditions</h1>
+  <h1 class="register-h rise-in" style="--reveal-delay: 80ms;">Terms &amp; Conditions</h1>
   <hr class="hr-r" />
 
   <div class="tc-wrapper">
@@ -158,9 +160,9 @@
           <li><a href="#top">Back to Top &uarr;</a></li>
           <li><a href="index.html#donate">Donate</a></li>
           <li><a href="sponsor.html">Want to Sponsor?</a></li>
+          <li><a href="tournament-details.html">Tournament Details</a></li>
           <li><a href="register.html">Tournament Registration</a></li>
           <li><a href="cancel.html">Cancel Registration</a></li>
-          <li><a href="terms.html">Terms and Conditions</a></li>
         </ul>
       </div>
 
@@ -247,6 +249,33 @@
     links.forEach(function(link) {
       link.addEventListener('click', closeMenu);
     });
+  })();
+
+  (function() {
+    var animated = document.querySelectorAll('.rise-in, .mask-reveal');
+    if (!animated.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+      animated.forEach(function(el) { el.classList.add('in-view'); });
+      return;
+    }
+
+    animated.forEach(function(el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.9) {
+        el.classList.add('in-view');
+      }
+    });
+
+    var io = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+
+    animated.forEach(function(el) { io.observe(el); });
   })();
 </script>
 

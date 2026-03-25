@@ -38,9 +38,9 @@
 
   <main class="details-main">
     <section class="details-section">
-      <p class="details-date">3pm - 5pm, June 5th</p>
-      <h1 class="details-title">Tournament Details</h1>
-      <p class="details-desc">We will be raising money for cancer with all proceeds going to this cause. </p>
+      <p class="details-date rise-in" style="--reveal-delay: 60ms;">3pm - 5pm, June 5th</p>
+      <h1 class="details-title rise-in" style="--reveal-delay: 140ms;">Tournament Details</h1>
+      <p class="details-desc rise-in" style="--reveal-delay: 220ms;">We will be raising money for cancer with all proceeds going to this cause. </p>
       <div class="details-buttons">
         <a href="register.html" class="btn btn-yellow">Register for tournament</a>
         <a href="cancel.html" class="btn btn-outline-red">Cancel Registration</a>
@@ -195,6 +195,33 @@
       links.forEach(function(link) {
         link.addEventListener('click', closeMenu);
       });
+    })();
+
+    (function() {
+      var animated = document.querySelectorAll('.rise-in, .mask-reveal');
+      if (!animated.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        animated.forEach(function(el) { el.classList.add('in-view'); });
+        return;
+      }
+
+      animated.forEach(function(el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.9) {
+          el.classList.add('in-view');
+        }
+      });
+
+      var io = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+
+      animated.forEach(function(el) { io.observe(el); });
     })();
   </script>
 </body>

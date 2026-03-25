@@ -93,6 +93,72 @@ a {
   border: 0;
 }
 
+/* Animations (subtle, premium) */
+@keyframes f4h-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes f4h-mask-swipe {
+  from { transform: translateX(0); }
+  to { transform: translateX(110%); }
+}
+
+.rise-in {
+  opacity: 0;
+  transform: translateY(10px);
+  will-change: transform, opacity;
+}
+
+.mask-reveal {
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  will-change: transform, opacity;
+}
+
+.mask-reveal::after {
+  content: "";
+  position: absolute;
+  inset: -0.08em -0.15em;
+  background: var(--reveal-bg, var(--off-white));
+  transform: translateX(0);
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 0.2em;
+}
+
+.rise-in.in-view {
+  animation: f4h-rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+.mask-reveal.in-view {
+  animation: f4h-rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+.mask-reveal.in-view::after {
+  opacity: 1;
+  animation: f4h-mask-swipe 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise-in,
+  .mask-reveal,
+  .mask-reveal::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .rise-in,
+  .mask-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Navigation */
 .nav-bar {
   position: fixed;
@@ -106,6 +172,7 @@ a {
   padding: 1rem var(--container-padding);
   background: var(--pure-white);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  animation: f4h-rise 520ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
 .nav-icon-link {
