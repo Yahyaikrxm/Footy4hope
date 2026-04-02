@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Footy4Hope – Tournament Details"
+  },
+  "nav": {
+    "home": "Home",
+    "mission": "Our Mission",
+    "donate": "Donate",
+    "sponsor": "Sponsor",
+    "terms": "Terms & Conditions"
+  },
+  "hero": {
+    "dateLine": "3pm - 5pm, July 10th",
+    "title": "Tournament Details",
+    "description": "We will be raising money for cancer with all proceeds going to this cause. ",
+    "register": "Register for tournament",
+    "cancel": "Cancel Registration"
+  },
+  "why": {
+    "heading": "Why",
+    "intro": "This is a fantastic way to spend quality time with your friends, enjoy the beautiful game, and have a remarkable time supporting a good cause. Along with this, there will be action shot photos, team photos, and a group photo with all participants.",
+    "bullets": [
+      "1st place prize: Winning Trophy + $100 team split + Miniature Trophy for each participant",
+      "2nd place: Medal + Miniature Trophy for each participant  ",
+      "MVP: Best individually performing player will win MVP Trophy, along with their photo being taken "
+    ]
+  },
+  "where": {
+    "heading": "Where?",
+    "body": "On July 10th, from 3pm to 5pm, at Milton Community Park, Field 5. Participants are expected to arrive 15 minutes prior to the start time."
+  },
+  "how": {
+    "heading": "How",
+    "bodyHtml": "You will receive details via email or phone regarding your team. On the selected date on July 10th, at 3pm you will show up along with your team, prepared to pay the $10 entry fee. Participants are recommended to dress appropriately for the weather. It is also highly suggested to bring soccer cleats, water, a light snack, sunscreen, and shin pads<br><br>Matches will be played as scrimmages, starting on a quarter field for the quarterfinals, eventually moving to a half field for both the semifinals and finals. Each game will consist of two 12 minute halfs, with a 2 minute water break at halftime to keep players refreshed and ready.",
+    "formatLine": "The tournament is a 5v5, 8 team tournament",
+    "bracketAlt": "Tournament Bracket"
+  },
+  "footer": {
+    "usefulLinksHeading": "Useful links",
+    "socialHeading": "Social media / Contact",
+    "links": {
+      "backToTop": "Back to Top ↑",
+      "home": "Home",
+      "donate": "Donate",
+      "sponsor": "Want to Sponsor?",
+      "registration": "Tournament Registration",
+      "cancel": "Cancel Registration",
+      "terms": "Terms and Conditions"
+    },
+    "copyright": "© 2026 Footy4Hope. All Rights Reserved"
+  }
+}

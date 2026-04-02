@@ -32,11 +32,11 @@
 
   <nav id="nav-menu" class="nav-menu" aria-hidden="true">
     <ul class="nav-links">
-      <li><a href="#mission">Our Mission</a></li>
-      <li><a href="tournament-details.html">Tournament Details</a></li>
-      <li><a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate"  target="_blank" rel="noopener noreferrer">Donate</a></li>
-      <li><a href="sponsor.html">Sponsor</a></li>
-      <li><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li><a href="#mission" data-content="nav.mission">Our Mission</a></li>
+      <li><a href="tournament-details.html" data-content="nav.tournament">Tournament Details</a></li>
+      <li><a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate"  target="_blank" rel="noopener noreferrer" data-content="nav.donate">Donate</a></li>
+      <li><a href="sponsor.html" data-content="nav.sponsor">Sponsor</a></li>
+      <li><a href="terms.html" data-content="nav.terms">Terms &amp; Conditions</a></li>
     </ul>
   </nav>
 
@@ -44,14 +44,14 @@
     <!-- Hero -->
     <section id="hero" class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
-        <h2 id="hero-title" class="hero-heading rise-in" style="--reveal-delay: 60ms;">Goals for a Cure</h2>
-        <p class="hero-subheading rise-in" style="--reveal-delay: 160ms;">A tournament to raise money for Canadian Cancer Society</p>
+        <h2 id="hero-title" class="hero-heading rise-in" style="--reveal-delay: 60ms;" data-content="hero.title">Goals for a Cure</h2>
+        <p class="hero-subheading rise-in" style="--reveal-delay: 160ms;" data-content="hero.subheading">A tournament to raise money for Canadian Cancer Society</p>
         <div class="hero-buttons">
-          <a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate" target="_blank" rel="noopener noreferrer" class="btn btn-yellow rise-in" style="--reveal-delay: 260ms;">Donate</a>
+          <a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate" target="_blank" rel="noopener noreferrer" class="btn btn-yellow rise-in" style="--reveal-delay: 260ms;" data-content="hero.donate">Donate</a>
 
-          <a href="register.html" class="btn btn-outline-yellow rise-in" style="--reveal-delay: 320ms;">Register for tournament</a>
+          <a href="register.html" class="btn btn-outline-yellow rise-in" style="--reveal-delay: 320ms;" data-content="hero.register">Register for tournament</a>
         </div>
-        <p class="scroll-down-indicator rise-in" style="--reveal-delay: 420ms;">↓ Scroll down to see more</p>
+        <p class="scroll-down-indicator rise-in" style="--reveal-delay: 420ms;" data-content="hero.scrollHint">↓ Scroll down to see more</p>
       </div>
       
     </section>
@@ -60,88 +60,62 @@
     <section id="mission" class="mission">
       <div class="mission-grid">
         <div class="mission-content">
-          <h3 class="mission-sub mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 60ms;">Our mission</h3>
-          <h2 class="mission-heading mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 80ms;">Kick Cancer out the game</h2>
-          <p class="mission-body mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 100ms;">
+          <h3 class="mission-sub mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 60ms;" data-content="mission.sub">Our mission</h3>
+          <h2 class="mission-heading mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 80ms;" data-content="mission.heading">Kick Cancer out the game</h2>
+          <p class="mission-body mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 100ms;" data-content="mission.body">
             We are turning our passion for soccer into a force for change. By uniting Milton’s youth on the pitch, we aim to raise $10,000 for the Canadian Cancer Society and ensure no one faces cancer alone.
-          <ul>
-            <li class="mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 300ms;"><strong>Leadership:</strong> A tournament designed by students, for students.</li>
-            <li class="mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 320ms;"><strong>Total Impact:</strong> 100% of all tournament proceeds go directly to the cause.</li>
-            <li class="mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 340ms;"><strong>Playing for a Cure:</strong> Every goal scored supports life-saving cancer research.</li>
-            </ul>
+          </p>
+          <ul data-list="mission.bullets" data-list-type="emphasis" data-li-class="mask-reveal" data-reveal-delay-start="300" data-reveal-delay-step="20" data-reveal-bg="var(--pure-white)"></ul>
           </div>
           
           
         
         <div  class="mission-photo">
-          <h3 class="mission-sub mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 80ms;">The people behind it</h3>
-          <h2 class="mission-heading mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 100ms;">Four friends with one goal</h2>
-          <p class="mission-body mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 120ms;">
+          <h3 class="mission-sub mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 80ms;" data-content="mission.peopleSub">The people behind it</h3>
+          <h2 class="mission-heading mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 100ms;" data-content="mission.peopleHeading">Four friends with one goal</h2>
+          <p class="mission-body mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 120ms;" data-content="mission.peopleBody">
             We are a group of dedicated, driven, and passionate high school students from Milton, Ontario looking to end a leading cause of death worldwide, cancer. Each member of our group has been affected by this obstacle, whether it's a family or relative who has faced it.
           </p>
-          <ul class="mission-list">
-            <li class="mission-item mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 300ms;">
-              <strong>Yahya Ikram</strong>
-              <span class="mission-role">Technical & Design</span>
-            </li>
-            <li class="mission-item mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 320ms;">
-              <strong>Zain Alrifai</strong>
-              <span class="mission-role">Finance & Admin</span>
-            </li>
-            <li class="mission-item mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 340ms;">
-              <strong>Shahzain Khalid</strong>
-              <span class="mission-role">Content & Social</span>
-            </li>
-            <li class="mission-item mask-reveal" style="--reveal-bg: var(--pure-white); --reveal-delay: 500ms;">
-              <strong>Rahul Moulik</strong>
-              <span class="mission-role">Logistics & Operations</span>
-            </li>
-          </ul>
+          <ul class="mission-list" data-list="mission.team" data-list-type="team"></ul>
         </div>
-        </div>
-      </div>
       </div>
     </section>
 
     <!-- Tournament -->
     <section id="tournament" class="tournament-details">
-      <h2 class="tournament-title rise-in" style="--reveal-delay: 60ms;">Tournament Overview</h2>
-      <p class="tournament-desc rise-in" style="--reveal-delay: 140ms;">
+      <h2 class="tournament-title rise-in" style="--reveal-delay: 60ms;" data-content="tournament.title">Tournament Overview</h2>
+      <p class="tournament-desc rise-in" style="--reveal-delay: 140ms;" data-content="tournament.description">
         Youth aged 14–18 can compete in a 7-game, 5v5 scrimmage tournament. As teams are eliminated, the playing area expands across the pitch to increase the challenge. Matches are 12 minutes long, featuring a 2-minute halftime to keep players energized.
       </p>
-        <a href="tournament-details.html" class="btn btn-yellow rise-in" style="--reveal-delay: 220ms;" id="register">See details / Register</a>
+        <a href="tournament-details.html" class="btn btn-yellow rise-in" style="--reveal-delay: 220ms;" id="register" data-content="tournament.seeDetails">See details / Register</a>
       <div class="tournament-cards">
         <div class="tournament-card">
-          <h4>When</h4>
-          <p class="card-month">June</p>
-          <p class="card-day">26</p>
-          <p class="card-time">From 3pm–6pm</p>
+          <h4 data-content="tournament.whenLabel">When</h4>
+          <p class="card-month" data-content="tournament.whenMonth">June</p>
+          <p class="card-day" data-content="tournament.whenDay">26</p>
+          <p class="card-time" data-content="tournament.whenTime">From 3pm–6pm</p>
         </div>
         <div class="tournament-card">
-          <h4>Where</h4>
+          <h4 data-content="tournament.whereLabel">Where</h4>
           <iframe class="mapsframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1492.962156674269!2d-79.85623925439847!3d43.49762576443633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6f493253714b%3A0x80837e4adac0e9bf!2sMilton%20Community%20Field%20%233!5e0!3m2!1sen!2sca!4v1772264419256!5m2!1sen!2sca" width="100%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p>Field 5, Milton Sports Centre, ON (456 Regional Rd.)</p>
+          <p data-content="tournament.whereAddress">Field 5, Milton Sports Centre, ON (456 Regional Rd.)</p>
         </div>
         <div class="tournament-card">
-          <h4>Why</h4>
-          <ul>
-            <li>There will be an photographer there to take team photos and action shots.</li>
-            <li>The top two teams take home Footy4Hope medals, with a small prize for the first-place winners.</li>
-            <li>Every dollar goes to Canadian Cancer Society, so you're supporting a great cause while having a good time.</li>
-          </ul>
+          <h4 data-content="tournament.whyLabel">Why</h4>
+          <ul data-list="tournament.whyBullets" data-list-type="plain"></ul>
         </div>
       </div>
-      <a href="terms.html" class="tournament-terms">Terms and Conditions</a>
+      <a href="terms.html" class="tournament-terms" data-content="tournament.termsLink">Terms and Conditions</a>
     </section>
 
     <!-- Fundraising -->
     <section class="fundraising-goal">
-      <p class="goal-text rise-in" style="--reveal-delay: 60ms;">Every Single Dollar Counts.</p>
-      <h2 class="goal-amount rise-in" style="--reveal-delay: 140ms;">Goal: $10,000</h2>
+      <p class="goal-text rise-in" style="--reveal-delay: 60ms;" data-content="fundraising.tagline">Every Single Dollar Counts.</p>
+      <h2 class="goal-amount rise-in" style="--reveal-delay: 140ms;" data-content="fundraising.goal">Goal: $10,000</h2>
       <div class="goal-separator"></div>
-      <p class="goal-note rise-in" style="--reveal-delay: 220ms;"><strong>100%</strong> of all money made from the tournament goes to Canadian Cancer Society.</p>
+      <p class="goal-note rise-in" style="--reveal-delay: 220ms;" data-content="html:fundraising.noteHtml"><strong>100%</strong> of all money made from the tournament goes to Canadian Cancer Society.</p>
       <div class="btn-yellow4">
-      <a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate"  target="_blank" rel="noopener noreferrer" class="btn btn-yellow5 btn-big rise-in" style="--reveal-delay: 300ms;">Donate</a>
+      <a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate"  target="_blank" rel="noopener noreferrer" class="btn btn-yellow5 btn-big rise-in" style="--reveal-delay: 300ms;" data-content="fundraising.donate">Donate</a>
       </div>    
     </section>
 
@@ -150,21 +124,16 @@
     <!-- Support -->
     <section id="donate" class="support">
       
-      <h2 class="support-heading rise-in" style="--reveal-delay: 60ms;">Support the movement.</h2>
-      <p class="tournament-desc rise-in" style="--reveal-delay: 120ms;">Are you a local business ready to make a difference? Help cover our operational costs so more of every dollar goes directly to the fight against cancer. Be part of a movement that turns passion into action.
+      <h2 class="support-heading rise-in" style="--reveal-delay: 60ms;" data-content="support.heading">Support the movement.</h2>
+      <p class="tournament-desc rise-in" style="--reveal-delay: 120ms;" data-content="support.intro">Are you a local business ready to make a difference? Help cover our operational costs so more of every dollar goes directly to the fight against cancer. Be part of a movement that turns passion into action.
       </p>
       
       <div class="promo-card rise-in" style="--reveal-delay: 180ms;">
-        <ul>
-          <li>Being featured at the end of our social media videos</li>
-          <li>Being featured in all social media posts</li>
-          <li>Having your brand displayed on our website</li>
-          <li>Having your brand be displayed on volunteer shirts</li>
-        </ul>
+        <ul data-list="support.promoBullets" data-list-type="plain"></ul>
       </div>
-      <p class="sponsor-desc rise-in" style="--reveal-delay: 220ms;">By supporting us, you’re doing more than just reaching new audiences through publicity, you’re helping fund initiatives that make a feasible impact, directly contributing to the fight against cancer and supporting the lives of those affected by it.
+      <p class="sponsor-desc rise-in" style="--reveal-delay: 220ms;" data-content="support.closing">By supporting us, you’re doing more than just reaching new audiences through publicity, you’re helping fund initiatives that make a feasible impact, directly contributing to the fight against cancer and supporting the lives of those affected by it.
       </p>
-      <a href="sponsor.html" class="btn btn-yellow rise-in" style="--reveal-delay: 260ms;">Become a Sponsor</a>
+      <a href="sponsor.html" class="btn btn-yellow rise-in" style="--reveal-delay: 260ms;" data-content="support.sponsorCta">Become a Sponsor</a>
 
       
   </section>
@@ -187,22 +156,22 @@
 
     <div class="footer-grid">
       <div class="footer-column">
-        <h3 class="footer-heading">Useful links</h3>
+        <h3 class="footer-heading" data-content="footer.usefulLinksHeading">Useful links</h3>
   
         <ul class="footer-links-list">
-          <li><a href="#top">Back to Top &uarr;</a></li>
-          <li><a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate"  target="_blank" rel="noopener noreferrer">Donate</a></li>
-          <li><a href="sponsor.html">Want to Sponsor?</a></li>
-          <li><a href="tournament-details.html">Tournament Details</a></li>
-          <li><a href="register.html">Tournament Registration</a></li>
-          <li><a href="cancel.html">Cancel Registration</a></li>
-          <li><a href="terms.html">Terms and Conditions</a></li>
+          <li><a href="#top" data-content="footer.links.backToTop">Back to Top &uarr;</a></li>
+          <li><a href="https://fundraisemyway.cancer.ca/campaigns/Footy4Hope/donate"  target="_blank" rel="noopener noreferrer" data-content="footer.links.donate">Donate</a></li>
+          <li><a href="sponsor.html" data-content="footer.links.sponsor">Want to Sponsor?</a></li>
+          <li><a href="tournament-details.html" data-content="footer.links.tournamentDetails">Tournament Details</a></li>
+          <li><a href="register.html" data-content="footer.links.registration">Tournament Registration</a></li>
+          <li><a href="cancel.html" data-content="footer.links.cancel">Cancel Registration</a></li>
+          <li><a href="terms.html" data-content="footer.links.terms">Terms and Conditions</a></li>
           
         </ul>
       </div>
 
       <div class="footer-column">
-        <h3 class="footer-heading">Social media / Contact</h3>
+        <h3 class="footer-heading" data-content="footer.socialHeading">Social media / Contact</h3>
       
         <ul class="footer-links-list">
           <li>
@@ -256,14 +225,16 @@
       </div>
     </div>
 
-    <p class="footer-copy">© 2026 Footy4Hope. All Rights Reserved</p>
+    <p class="footer-copy" data-content="footer.copyright">© 2026 Footy4Hope. All Rights Reserved</p>
   </footer>
 
 
+  <script src="js/site-content.js"></script>
   <script>
-    (function() {
+    function initNavMenu() {
       var hamburger = document.querySelector('.nav-hamburger');
       var menu = document.getElementById('nav-menu');
+      if (!hamburger || !menu) return;
       var links = menu.querySelectorAll('a');
 
       function openMenu() {
@@ -291,9 +262,9 @@
       links.forEach(function(link) {
         link.addEventListener('click', closeMenu);
       });
-    })();
+    }
 
-    (function() {
+    function initRevealAnimations() {
       var animated = document.querySelectorAll('.rise-in, .mask-reveal');
       if (!animated.length) return;
 
@@ -318,7 +289,14 @@
       }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
 
       animated.forEach(function(el) { io.observe(el); });
-    })();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      initNavMenu();
+      loadSiteContent('content/index.json')
+        .then(function () { initRevealAnimations(); })
+        .catch(function () { initRevealAnimations(); });
+    });
   </script>
 </body>
 </html>
