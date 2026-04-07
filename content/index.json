@@ -1,88 +1,88 @@
 {
-  "meta": {
-    "title": "Footy4Hope – Playing for a Cure"
-  },
-  "nav": {
-    "mission": "Our Mission",
-    "tournament": "Tournament Details",
-    "donate": "Donate",
-    "sponsor": "Sponsor",
-    "terms": "Terms & Conditions"
-  },
-  "hero": {
-    "title": "Goals for a Cure",
-    "subheading": "A tournament to raise money for Canadian Cancer Society",
-    "donate": "Donate",
-    "register": "Register for tournament",
-    "scrollHint": "↓ Scroll down to see more"
-  },
-  "mission": {
-    "sub": "Our mission",
-    "heading": "Kick Cancer out the game",
-    "body": "We are turning our passion for soccer into a force for change. By uniting Milton’s youth on the pitch, we aim to raise $10,000 for the Canadian Cancer Society and ensure no one faces cancer alone.",
-    "bullets": [
-      { "lead": "Leadership:", "text": " A tournament designed by students, for students." },
-      { "lead": "Total Impact:", "text": " 100% of all tournament proceeds go directly to the cause." },
-      { "lead": "Playing for a Cure:", "text": " Every goal scored supports life-saving cancer research." }
-    ],
-    "peopleSub": "The people behind it",
-    "peopleHeading": "Four friends with one goal",
-    "peopleBody": "We are a group of dedicated, driven, and passionate high school students from Milton, Ontario looking to end a leading cause of death worldwide, cancer. Each member of our group has been affected by this obstacle, whether it's a family or relative who has faced it.",
-    "team": [
-      { "name": "Yahya Ikram", "role": "Technical & Design" },
-      { "name": "Zain Alrifai", "role": "Finance & Admin" },
-      { "name": "Shahzain Khalid", "role": "Content & Social" },
-      { "name": "Rahul Moulik", "role": "Logistics & Operations" }
-    ]
-  },
-  "tournament": {
-    "title": "Tournament Overview",
-    "description": "Youth aged 14–18 can compete in a 7-game, 5v5 scrimmage tournament. As teams are eliminated, the playing area expands across the pitch to increase the challenge. Matches are 12 minutes long, featuring a 2-minute halftime to keep players energized.",
-    "seeDetails": "See details / Register",
-    "whenLabel": "When",
-    "whenMonth": "June",
-    "whenDay": "26",
-    "whenTime": "From 3pm–6pm",
-    "whereLabel": "Where",
-    "whereAddress": "Field 5, Milton Sports Centre, ON (456 Regional Rd.)",
-    "whyLabel": "Why",
-    "whyBullets": [
-      "There will be an photographer there to take team photos and action shots.",
-      "The top two teams take home Footy4Hope medals, with a small prize for the first-place winners.",
-      "Every dollar goes to Canadian Cancer Society, so you're supporting a great cause while having a good time."
-    ],
-    "termsLink": "Terms and Conditions"
-  },
-  "fundraising": {
-    "tagline": "Every Single Dollar Counts.",
-    "goal": "Goal: $10,000",
-    "noteHtml": "<strong>100%</strong> of all money made from the tournament goes to Canadian Cancer Society.",
-    "donate": "Donate"
-  },
-  "support": {
-    "heading": "Support the movement.",
-    "intro": "Are you a local business ready to make a difference? Help cover our operational costs so more of every dollar goes directly to the fight against cancer. Be part of a movement that turns passion into action.",
-    "promoBullets": [
-      "Being featured at the end of our social media videos",
-      "Being featured in all social media posts",
-      "Having your brand displayed on our website",
-      "Having your brand be displayed on volunteer shirts"
-    ],
-    "closing": "By supporting us, you’re doing more than just reaching new audiences through publicity, you’re helping fund initiatives that make a feasible impact, directly contributing to the fight against cancer and supporting the lives of those affected by it.",
-    "sponsorCta": "Become a Sponsor"
-  },
-  "footer": {
-    "usefulLinksHeading": "Useful links",
-    "socialHeading": "Social media / Contact",
-    "links": {
-      "backToTop": "Back to Top ↑",
-      "donate": "Donate",
-      "sponsor": "Want to Sponsor?",
-      "tournamentDetails": "Tournament Details",
-      "registration": "Tournament Registration",
-      "cancel": "Cancel Registration",
-      "terms": "Terms and Conditions"
-    },
-    "copyright": "© 2026 Footy4Hope. All Rights Reserved"
-  }
+ "meta": {
+   "title": "Footy4Hope – Playing for a Cure"
+ },
+ "nav": {
+   "mission": "Our Mission",
+   "tournament": "Tournament Details",
+   "donate": "Donate",
+   "sponsor": "Sponsor",
+   "terms": "Terms & Conditions"
+ },
+ "hero": {
+   "title": "Goals for a Cure",
+   "subheading": "A tournament to raise money for Canadian Cancer Society",
+   "donate": "Donate",
+   "register": "Register for tournament",
+   "scrollHint": "↓ Scroll down to see more"
+ },
+ "mission": {
+   "sub": "Our mission",
+   "heading": "Kick Cancer out the game",
+   "body": "We are turning our passion for soccer into a force for change. By uniting Milton’s youth on the pitch, we aim to raise $5,000 for the Canadian Cancer Society and ensure no one faces cancer alone.",
+   "bullets": [
+     { "lead": "Leadership:", "text": " A tournament designed by students, for students." },
+     { "lead": "Total Impact:", "text": " 100% of all tournament proceeds go directly to the cause." },
+     { "lead": "Playing for a Cure:", "text": " Every goal scored supports life-saving cancer research." }
+   ],
+   "peopleSub": "The people behind it",
+   "peopleHeading": "Four friends with one goal",
+   "peopleBody": "We are a group of dedicated, driven, and passionate high school students from Milton, Ontario looking to end a leading cause of death worldwide, cancer. Each member of our group has been affected by this obstacle, whether it's a family or relative who has faced it.",
+   "team": [
+     { "name": "Yahya Ikram", "role": "Technical & Design" },
+     { "name": "Zain Alrifai", "role": "Finance & Admin" },
+     { "name": "Shahzain Khalid", "role": "Content & Social" },
+     { "name": "Rahul Moulik", "role": "Logistics & Operations" }
+   ]
+ },
+ "tournament": {
+   "title": "Tournament Overview",
+   "description": "Youth aged 14–18 can compete in a 7-game, 6v6 scrimmage tournament. As teams are eliminated, the playing area expands across the pitch to increase the challenge. Matches are 12 minutes long, featuring a 2-minute halftime to keep players energized.",
+   "seeDetails": "See details / Register",
+   "whenLabel": "When",
+   "whenMonth": "July",
+   "whenDay": "12",
+   "whenTime": "From 3pm–5pm",
+   "whereLabel": "Where",
+   "whereAddress": "Field 5, Milton Sports Centre, ON (456 Regional Rd.)",
+   "whyLabel": "Why",
+   "whyBullets": [
+     "There will be a photographer there to take team photos and action shots.",
+     "The top two teams take home Footy4Hope medals, with a small prize for the first-place winners.",
+     "Every dollar goes to the Canadian Cancer Society, so you're supporting a great cause while having a good time."
+   ],
+   "termsLink": "Terms and Conditions"
+ },
+ "fundraising": {
+   "tagline": "Every Single Dollar Counts.",
+   "goal": "Goal: $5,000",
+   "noteHtml": "<strong>100%</strong> of all money made from the tournament goes to Canadian Cancer Society.",
+   "donate": "Donate"
+ },
+ "support": {
+   "heading": "Support the movement.",
+   "intro": "Are you a local business ready to make a difference? Help cover our operational costs so more of every dollar goes directly to the fight against cancer. Be part of a movement that turns passion into action.",
+   "promoBullets": [
+     "Being featured at the end of our social media videos",
+     "Being featured in all social media posts",
+     "Having your brand displayed on our website",
+     "Having your brand be displayed on volunteer shirts"
+   ],
+   "closing": "By supporting us, you’re doing more than just reaching new audiences through publicity, you’re helping fund initiatives that make a feasible impact, directly contributing to the fight against cancer and supporting the lives of those affected by it.",
+   "sponsorCta": "Become a Sponsor"
+ },
+ "footer": {
+   "usefulLinksHeading": "Useful links",
+   "socialHeading": "Social media / Contact",
+   "links": {
+     "backToTop": "Back to Top ↑",
+     "donate": "Donate",
+     "sponsor": "Want to Sponsor?",
+     "tournamentDetails": "Tournament Details",
+     "registration": "Tournament Registration",
+     "cancel": "Cancel Registration",
+     "terms": "Terms and Conditions"
+   },
+   "copyright": "© 2026 Footy4Hope. All Rights Reserved"
+ }
 }
