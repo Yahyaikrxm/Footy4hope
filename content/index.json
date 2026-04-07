@@ -44,7 +44,7 @@
    "whenDay": "12",
    "whenTime": "From 3pm–5pm",
    "whereLabel": "Where",
-   "whereAddress": "Field 5, Milton Sports Centre, ON (456 Regional Rd.)",
+   "whereAddress": "Milton Community Field #3, Milton, ON L9T 8H5",
    "whyLabel": "Why",
    "whyBullets": [
      "There will be a photographer there to take team photos and action shots.",
@@ -62,12 +62,13 @@
  "support": {
    "heading": "Support the movement.",
    "intro": "Are you a local business ready to make a difference? Help cover our operational costs so more of every dollar goes directly to the fight against cancer. Be part of a movement that turns passion into action.",
-   "promoBullets": [
-     "Being featured at the end of our social media videos",
-     "Being featured in all social media posts",
-     "Having your brand displayed on our website",
-     "Having your brand be displayed on volunteer shirts"
-   ],
+  "promoBullets": [
+    "Recognition at the event (based on selection)",
+    "Social media thank-you post",
+    "Logo featured at the end of promotional videos",
+    "Logo placement on event shirts and banners (based on selection)",
+    "Personalized thank-you poster with a group photo from the event"
+  ],
    "closing": "By supporting us, you’re doing more than just reaching new audiences through publicity, you’re helping fund initiatives that make a feasible impact, directly contributing to the fight against cancer and supporting the lives of those affected by it.",
    "sponsorCta": "Become a Sponsor"
  },
